@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+</head>
+<body>
+    
+    <div class="container" >
+        <div class="phone light">
+            <div id="top-menu">
+                <div class="button animate__animated animate__fadeInTopLeft">
+                    <i class="fas fa-arrow-left "></i>
+                </div>
+                <button id="mode" class="button animate__animated animate__slideInDown ">
+                    <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+                </button>
+                <div class="button animate__animated animate__fadeInTopRight">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="thimbnail-border animate__animated animate__pulse animate__infinite	infinite animate__slower 3s">
+                <div class="song-thumbnail "></div>
+            </div>
+            <div  id="song-details">
+                <h1 class="song-title animate__animated animate__backInLeft">SUMMER</h1>
+                <span class="artist animate__animated animate__backInRight">Brand ft-song Artist</span>
+            </div>
+            <div id="time-slider">
+                <div class="slider-times">
+                    <span>1:21</span>
+                    <span>3:46</span>
+                </div>
+                <input type="range" min="1" max="100" 
+                        value="50" class="slider" id="myRange">
+            </div>
+            <div id="song-controls">
+                <div class="button button animate__animated animate__fadeInBottomLeft">
+                    <div class="fas fa-backward"></div>
+                </div>
+                <div class="button animate__animated animate__slideInUp">
+                    <div class="fas fa-pause "></div>
+                </div>
+                <div class="button button animate__animated animate__fadeInBottomRight">
+                    <div class="fas fa-forward"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
